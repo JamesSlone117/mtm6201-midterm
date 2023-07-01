@@ -1,25 +1,219 @@
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+li {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+
+
+/* styling starts */
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #aad4cf;
-    font-size: 18px;
+    font-size: 1.5rem;
 }
+
+
 
 
 .wrapper {
     top: 100%;
     margin: 100px auto;
-    width: 1000px;
+    width: 100rem;
     background-color: rgb(200, 228, 228);
     padding: 10px;
 }
 
+/* nav styling */
 
-   ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+header {
+    padding: 2rem;
+    background-color: wheat;
+
+}
+
+nav {
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content:first baseline;
+}
+
+nav img {
+    height: 6rem;
+    width: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 3rem;
+  }
+
+nav ul li {
+    display: inline;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+
+  nav a:hover {
+    color:aliceblue;
+    
+  }
+
+
+
+
+
+
+
+
+
+ul {
+    /* list-style: none;
         text-align: center;
-        /* text-transform: uppercase; */
-        font-size: 2rem;
-    }
+        text-transform: uppercase;
+        font-size: 2rem; */
+
+}
+
+
+h1,
+ul,
+p {
+    /* padding: 1.5rem; */
+}
+
+ul li {
+    /* text-decoration: none; */
+
+}
