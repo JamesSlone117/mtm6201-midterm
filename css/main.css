@@ -130,8 +130,8 @@ q:after {
 /* styling starts */
 
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #aad4cf;
+    font-family: sans-serif;
+    background-color: #704672;
     font-size: 1.5rem;
 }
 
@@ -140,30 +140,37 @@ body {
 
 .wrapper {
     top: 100%;
-    margin: 100px auto;
-    width: 100rem;
-    background-color: rgb(200, 228, 228);
-    padding: 10px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding-top: 2rem;
 }
 
 /* nav styling */
 
 header {
     padding: 2rem;
-    background-color: wheat;
-
+    
+    
 }
 
 nav {
-    background-color: aliceblue;
+    background-color: #f8d34f;
     display: flex;
     align-items: center;
     justify-content:first baseline;
+    padding: 1.1rem;
+    border-radius: 10px;
+    
+    justify-content: center;
+    
+    
+
 }
 
 nav img {
-    height: 6rem;
+    height: 7rem;
     width: auto;
+    padding: 12px 0px 12px 12px;
 }
 
 nav ul {
@@ -172,22 +179,38 @@ nav ul {
     padding: 3rem;
   }
 
-nav ul li {
-    display: inline;
-    line-height: 80px;
-    margin: 0 5px;
-}
-
-
 nav a {
     text-decoration: none;
-    color: #333;
-    padding: 5px;
+    color: white;
+    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: #26a9e1;
+    
+    border-radius: 10px;
+    margin: 2rem;
+    
   }
 
   nav a:hover {
     color:aliceblue;
-    
+    background-color: #704672;
+  }
+
+
+/* adjusted the scale of the text on the page to  */
+  h1, h2 {
+    color: #f8d34f;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+  p {
+    color: white;
   }
 
 
@@ -198,22 +221,27 @@ nav a {
 
 
 
-ul {
-    /* list-style: none;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 2rem; */
 
-}
+
+
+
+
+
 
 
 h1,
 ul,
 p {
-    /* padding: 1.5rem; */
+    padding: 1.5rem;
 }
 
 ul li {
     /* text-decoration: none; */
 
+}
+
+
+
+@media screen {
+  
 }
