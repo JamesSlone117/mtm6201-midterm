@@ -25,6 +25,17 @@ p {
   color: white;
 }
 
+
+
+
+
+
+
+
+
+
+
+
 /* Mobile Styles */
 @media screen and (max-width: 767px) {
     .wrapper {
@@ -41,6 +52,29 @@ p {
       height: auto;
       margin-bottom: 10px;
     }
+
+
+    nav a:hover {
+      color: #f8d34f;
+      transform: scale(1.1);
+    }
+
+
+
+    nav a {
+      transition-property: all;
+      transition-duration: 0.3s;
+      transition-timing-function: ease-out;
+      display: block;
+      margin: 1px;
+      padding: 0.5rem;
+    }
+    
+    nav a {
+      text-decoration: none;
+      font-weight: bold;
+      
+    }
   
     nav ul {
       display: flex;
@@ -48,9 +82,16 @@ p {
       align-items: center;
     }
   
-    nav ul li {
+    nav li {
       margin-bottom: 10px;
+      
     }
+
+    
+
+
+
+
   
     section h1 {
       font-size: 24px;
@@ -86,6 +127,15 @@ p {
       padding-top: 2.3rem;
       padding: 1.5rem;
     }
+    footer a:hover {
+      color: #0645AD;
+      transform: scale(1.1);
+    }
+
+
+
+
+    
   }
   
   /* Tablet Styles */
