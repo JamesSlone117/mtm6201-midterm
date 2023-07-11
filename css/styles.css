@@ -1,36 +1,59 @@
-body {
-  font-family: sans-serif;
-  background-color: #704672;
-  font-size: 1.5rem;
-  color: white;
+ol,
+li {
+  list-style: none;
 }
-
-ul a {
-  color: white;
-}
-
-h1,
-h2 {
-  color: #f8d34f;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 5rem;
-}
-
-h2 {
-  font-size: 3rem;
-}
-
-p {
-  color: white;
-}
-
 
 
 /* Mobile Styles */
+
 @media screen and (max-width: 767px) {
+
+
+  /* font and colors sets color and sizes across the page*/
+  body {
+    font-family: sans-serif;
+    background-color: #704672;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  ul a {
+    color: white;
+  }
+
+  .head-color {
+    color: #f8d34f;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    font-size: 2.5rem;
+  }
+
   .wrapper {
     padding: 1.1rem;
   }
@@ -74,27 +97,22 @@ p {
 
 
   .homeBanner h1 {
-    font-size: 3rem;
     text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
     background-color: #26a9e1;
-    border-radius: 10px;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    border-radius: 10px 10px 0px 0px;
+    margin: 0;
+
 
   }
 
-  .homeBanner img {
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    position:relative;
-   
-    opacity: 0.8;
+    border-radius: 0px 0px 10px 10px;
+    position: relative;
 
   }
 
@@ -103,62 +121,99 @@ p {
 
 
   .aboutImg {
-    
+
     max-width: 100%;
     height: auto;
-    
-    position:relative;
+    position: relative;
   }
+
   .about-container {
     text-align: center;
 
   }
+
   .about-container img {
     border-radius: 10px;
   }
 
 
-  /* .products-container {
+  /* top product images desplayed in a column  */
+  .product-images img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50px;
+
+  }
+
+  .product-images {
     text-align: center;
-    margin-bottom: 20px;
+  }
+
+
+  /* top product items desplayed in a row, makes images circles, styling buttons + a hover  */
+  .product-items {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border-radius: 50px;
+    padding: 2rem;
+
 
   }
-  
+
+  .product-items img {
+    border-radius: 360px;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .hide {
+    display: none;
+    visibility: hidden;
+  }
+
+
+
+
   .product-item {
-    display: inline-block;
-    width: 200px;
-
-    margin: 10px;
-  }
-  
-  
-  
-  
-  
-  .product-price {
-   
-    margin-bottom: 5px;
+    padding: 2rem;
+    margin: 1.5rem;
+    text-align: center;
   }
 
+  /* button */
+  .buy-button {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
 
-  .buy-button{
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 5px 10px;
-      text-align: center;
-      margin-top: 10px;
-      cursor: pointer;
-      font-size: 2rem;
+    line-height: 20px;
 
-      
-      
-  } */
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    padding: 3rem;
+
+  }
+
+  .buy-button:hover,
+  .buy-button:focus {
+    background-color: green;
+  }
 
 
 
-  
-  
+
+
 
   footer {
     text-align: center;
@@ -186,8 +241,8 @@ p {
   }
 
   footer {
-    background-color:#26a9e1;
-    
+    background-color: #26a9e1;
+
   }
 
 
@@ -198,25 +253,54 @@ p {
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  .wrapper {
-    padding: 1.2rem;
+
+  /* font and colors sets color and sizes across the page*/
+  body {
+    font-family: sans-serif;
+    background-color: #704672;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  ul a {
+    color: white;
+  }
+
+  .head-color {
+    color: #f8d34f;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    color: white;
+
+  }
+
+  footer p {
+    font-size: 1.5rem;
   }
 
   nav {
-    text-align: center;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: row;
-    background-color:#f8d34f;
-    border-radius: 10px;
+    font-size: 2rem;
   }
 
-  nav img {
-    max-width: 100%;
-    height: auto;
-
+  .wrapper {
+    padding: 1.2rem;
   }
-
 
   nav a:hover {
     color: #f8d34f;
@@ -233,10 +317,9 @@ p {
     font-weight: bold;
   }
 
-
   nav ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: #26a9e1;
     border-radius: 10px;
@@ -244,8 +327,14 @@ p {
 
 
 
+
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
   .homeBanner h1 {
-    font-size: 3rem;
     text-align: center;
     position: absolute;
     top: 50%;
@@ -254,19 +343,20 @@ p {
     z-index: 2;
     background-color: #26a9e1;
     border-radius: 10px;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
 
   }
 
-  .homeBanner img {
+  .image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    position:relative;
-    opacity: 0.8;
   }
-
 
 
   /* puts about text to the right of the image */
@@ -275,12 +365,12 @@ p {
     flex-direction: row;
     align-items: center;
   }
-  
+
   .aboutImg {
     margin-right: 20px;
     margin-bottom: 2rem;
   }
-  
+
   .about-container h2,
   .about-container p {
     text-align: left;
@@ -291,7 +381,79 @@ p {
   }
 
 
-   /* footer */
+
+
+
+
+  /* top product images desplayed in a column  */
+  .product-images img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50px;
+
+  }
+
+  .product-images {
+    text-align: center;
+  }
+
+
+  /* top product items desplayed in a row, makes images circles, styling buttons + a hover  */
+  .product-items {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    border-radius: 50px;
+    padding: 2rem;
+    text-align: center;
+
+
+  }
+
+  .product-items img {
+    border-radius: 360px;
+    max-width: 70%;
+    height: auto;
+  }
+
+
+  .hide-tablet {
+    display: none;
+    visibility: hidden;
+  }
+
+  .product-item {
+    padding: 2rem;
+    margin: 1.5rem;
+  }
+
+  /* button */
+  .buy-button {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 2.5rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+
+  }
+
+  .buy-button:hover,
+  .buy-button:focus {
+    background-color: green;
+  }
+
+  /* footer */
 
   footer {
     text-align: center;
@@ -319,11 +481,11 @@ p {
   }
 
   footer {
-    background-color:#26a9e1;
+    background-color: #26a9e1;
   }
-    
 
- 
+
+
 }
 
 
@@ -342,9 +504,62 @@ p {
 
 /* Desktop Styles */
 @media screen and (min-width: 1024px) {
+
+  /* font and colors sets color and sizes across the page*/
+  body {
+    font-family: sans-serif;
+    background-color: #704672;
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  ul a {
+    color: white;
+  }
+
+  .head-color {
+    color: #f8d34f;
+    font-weight: bold;
+  }
+
+  h1 {
+    font-size: 8rem;
+    padding-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+    color: white;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  nav {
+    font-size: 1.8rem;
+
+  }
+
+
+
+
+
+
+
+
   /* Styles for desktops */
   .wrapper {
-    padding: 2.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 
   nav {
@@ -352,16 +567,12 @@ p {
     margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
-    background-color:#f8d34f;
+
     border-radius: 10px;
 
   }
 
-  nav img {
-    max-width: 100%;
-    height: auto;
 
-  }
 
 
   nav a:hover {
@@ -377,7 +588,9 @@ p {
     padding: 0.5rem;
     text-decoration: none;
     font-weight: bold;
-    
+
+
+
   }
 
 
@@ -387,64 +600,78 @@ p {
     align-items: center;
     background-color: #26a9e1;
     border-radius: 10px;
+    max-height: fit-content;
+    width: 120rem;
+
   }
 
-
+  .image-container img {
+    object-fit: cover;
+    opacity: 70%;
+    border-radius: 25px;
+    max-width: 100%;
+    height: 50rem;
+  }
 
   .homeBanner h1 {
-    font-size: 3rem;
     text-align: center;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -150%);
     z-index: 2;
     background-color: #26a9e1;
     border-radius: 10px;
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
 
   }
 
-  .homeBanner img {
-    max-width: 100%;
-    height: auto;
+  .image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+
     border-radius: 10px;
-    position:relative;
-    opacity: 0.8;
-
   }
-
 
   /* puts about text to the right of the image */
   .about-container {
     display: flex;
     flex-direction: row;
   }
+
   .about-container img {
     border-radius: 10px;
   }
+
   .about-text {
     padding: 5rem;
   }
 
-  
+
   .aboutImg {
-    width: 25rem; /* Adjust the width to your desired size */
-  height: auto; /* Maintain aspect ratio */
-    
+    width: 25rem;
+    /* Adjust the width to your desired size */
+    height: auto;
+    /* Maintain aspect ratio */
+
     object-fit: cover;
     margin-right: 20px;
     margin: 2rem;
-    
+
   }
-  
+
   .about-container h2,
   .about-container p {
     text-align: left;
   }
 
-/* top product images */
+
+
+
+  /* top product images desplayed in a column  */
   .product-images img {
     max-width: 20%;
     height: auto;
@@ -452,35 +679,83 @@ p {
 
   .product-images {
     text-align: center;
+    background-color: #26a9e1;
+    border-radius: 50px;
+
   }
 
-  .products-container {
-    align-items: center;
+
+  /* top product items desplayed in a row, makes images circles, styling buttons + a hover  */
+  .product-items {
+    display: flex;
+    flex-direction: row;
+
+    justify-items: center;
+    border-radius: 50px;
+    padding: 2rem;
+
+
+  }
+
+  .product-items img {
+    border-radius: 360px;
+    max-width: 70%;
+    height: auto;
   }
 
 
 
-  
+  .product-item {
+    padding: 2rem;
+    margin: 1.5rem;
+  }
 
-  
-   /* footer */
-
-
-
-
-   footer {
-    background-color:#26a9e1;
-    padding: 20px;
+  /* button */
+  .buy-button {
+    background-color: #EA4C89;
+    border-radius: 8px;
+    border-style: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 2rem;
+    position: relative;
     text-align: center;
-    
+    text-decoration: none;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+
   }
-  
+
+  .buy-button:hover,
+  .buy-button:focus {
+    background-color: green;
+  }
+
+.skip-link {
+  color: white;
+  font-size: 6rem;
+  align-self: self-end;
+}
+  /* footer */
+
+
+  footer {
+    background-color: #26a9e1;
+    padding: 20px;
+    text-align: end;
+
+  }
+
   footer p {
     color: white;
-    font-size: 14px;
     margin-bottom: 10px;
   }
-  
+
   footer ul {
     list-style: none;
     padding: 0;
@@ -489,15 +764,14 @@ p {
     justify-content: center;
     margin-bottom: 10px;
   }
-  
+
   footer li {
     margin: 0 10px;
   }
-  
+
   footer a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
     padding: 1.5rem;
   }
 
