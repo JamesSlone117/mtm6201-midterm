@@ -13,7 +13,7 @@
     <div class="wrapper">
         <header>
             <!-- nav starts -->
-            <nav id="main-content">
+            <nav id="main-content" role="navigation">
                 <a href="index.html"><img src="images/pebble_pops_logo.png" alt="pebble pops company logo"></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -23,44 +23,44 @@
             </nav>
         </header>
 
-        <section class="products-container">
+        <section class="products-container" role="region" aria-label="Products Section">
 
 
-            <!-- 3 images on top displayed across -->
+            <!-- 3 Top Images displayed across -->
 
             <div class="product-images">
-                <img  src="images/person1.png" alt="Product 1">
-                <img src="images/person2.png" class="hide" alt="Product 2">
-                <img src="images/person3.png" class="hide hide-tablet" alt="Product 3">
+                <img  src="images/person1.png" alt="picuture of little girl holding lolipop inside">
+                <img src="images/person2.png" class="hide" alt="picuture of women holding ice cream cone outside">
+                <img src="images/person3.png" class="hide hide-tablet" alt="picuture of man with confetti around him">
             </div>
 
-            <h2 class="head-color" role="heading">Products</h2>
+            <h2 class="head-color" role="heading" aria-level="2">Products</h2>
 
+            <!-- Product Items -->
             <!-- 4 different food products with title, price, img and btn  -->
-
-            <div class="product-items">
-                <div class="product-item">
-                    <img class="product-image" src="images/product1.png" alt="Product 1">
-                    <h3 role="heading" class="head-color product-title">Donuts</h3>
+            <div class="product-items" role="list">
+                <div class="product-item" role="listitem">
+                    <img class="product-image" src="images/product1.png" alt="Product 1 - picuture of a purple and blue donut on a yellow background">
+                    <h3 role="heading" class="head-color product-title" role="heading" aria-level="3">Donuts</h3>
                     <p class="product-price p-text">$10</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
 
-                <div class="product-item">
-                    <img class="product-image" src="images/product2.png" alt="Product 2">
-                    <h3 role="heading" class="head-color product-title">Cupcake</h3>
+                <div class="product-item" role="listitem">
+                    <img class="product-image" src="images/product2.png" alt="Product 2 - picuture of a white cupcake on a pink background">
+                    <h3 role="heading" class="head-color product-title" role="heading" aria-level="3">Cupcake</h3>
                     <p class="product-price p-text">$15</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
-                <div class="product-item">
-                    <img class="product-image" src="images/product3.png" alt="Product 3">
-                    <h3 role="heading" class="head-color product-title">Cupcake</h3>
+                <div class="product-item" role="listitem">
+                    <img class="product-image" src="images/product3.png" alt="Product 3 - picuture white strawberry cupcake on a table">
+                    <h3 role="heading" class="head-color product-title" role="heading" aria-level="3">Cupcake</h3>
                     <p class="product-price p-text">$20</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
-                <div class="product-item">
-                    <img class="product-image" src="images/product4.png" alt="Product 4">
-                    <h3 role="heading" class="head-color product-title">Rice Bar</h3>
+                <div class="product-item" role="listitem">
+                    <img class="product-image" src="images/product4.png" alt="Product 4 - picuture of multiple chocolate ricebar on a white table">
+                    <h3 role="heading" class="head-color product-title" role="heading" aria-level="3">Rice Bar</h3>
                     <p class="product-price p-text">$20</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
@@ -69,18 +69,20 @@
 
     </div>
 
-    <a href="#main-content" class="skip-link"><i class="fa-solid fa-arrow-up"></i></a>
+    <!-- Skip link to navigate to the main content -->
+    <a href="#main-content" class="skip-link" role="link"><i class="fa-solid fa-arrow-up"></i></a>
 
     <!-- footer with socal links with icons -->
     <footer>
         <p class="p-text">&copy; Pebble Pops All rights Reserved</p>
         <ul>
-            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/" role="link"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/home" role="link"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/" role="link"><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
     </footer>
 
+    <!-- alows icons to be added to the page -->
     <script src="https://kit.fontawesome.com/85ea36ec96.js" crossorigin="anonymous"></script>
 
 </body>

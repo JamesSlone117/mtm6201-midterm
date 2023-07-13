@@ -13,7 +13,7 @@
     <div class="wrapper">
         <header>
             <!-- nav starts -->
-            <nav id="main-content">
+            <nav id="main-content" role="navigation">
                 <a href="index.html"><img src="images/pebble_pops_logo.png" alt="pebble pops company logo"></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -23,77 +23,66 @@
             </nav>
         </header>
 
-        <section class="about-container">
+        <!-- About Section -->
+        <section class="about-container" role="region" aria-label="About Us Section">
             <div class="aboutImg">
                 <img src="images/courtney-cook-unsplash.jpg" alt="picuture of girl holding a cake pop" class="aboutImg">
             </div>
 
             <div class="about-text">
-                <h2 class="head-color" role="heading">About Us!</h2>
-                <p class="p-text">Pebble Pops! is a cake pop company that specializes in selling flavors that appeal to your mood or
+                <h2 class="head-color" role="heading" aria-level="2">About Us!</h2>
+                <p class="p-text">Pebble Pops! is a cake pop company that specializes in selling flavors that appeal to
+                    your mood or
                     situation. Their slogan is “get a taste of joy, one scoop at a time”, so whether you're in a happy
                     or sad state their goal is to bring up your mood and brighten your day.</p>
             </div>
 
         </section>
+        <!-- Contact Section -->
+        <div class="contact-contaner" role="region" aria-label="Contact Us Section">
+            <h2 class="head-color" role="heading" aria-level="2">Contact Us</h2>
+            <div class="form-box contact-box">
+                <!-- form starts here -->
+                <form action="index.html">
+                    <div id="textboxs">
+                        <!-- Input field for fullname -->
+                        <label class="p-text" for="fullname">Fullname</label>
 
+                        <input class="textbox1" type="text" id="fullname" name="fullname" required>
 
-       
+                        <!-- Input field for email -->
+                        <label class="p-text" for="email">Email</label>
 
-            <div class="contact-contaner">
-                <h2 class="head-color">Contact Us</h2>
-                <div class="form-box contact-box">
-                    <!-- form starts here -->
-                    <form action="index.html">
-                        <div id="textboxs">
-                            <!-- Input field for fullname -->
-                            <label class="p-text" for="fullname">Fullname</label>
+                        <input class="textbox1" type="email" id="email" name="email" required>
 
-                            <input class="textbox1" type="text" id="fullname" name="fullname" required>
+                        <!-- Input field for message -->
+                        <label class="p-text" for="message">Your Message</label>
 
-                            <!-- Input field for email -->
-                            <label class="p-text" for="email">Email</label>
+                        <input class="textbox1 textbox2" type="text" name="message" id="message">
+                    </div>
 
-                            <input class="textbox1" type="email" id="email" name="email" required>
+                    <!-- Submit button for the form -->
+                    <button class="buy-button" type="submit">Send</button>
 
-                            <!-- Input field for message -->
-                            <label class="p-text" for="message">Your Message</label>
+                </form>
+                <!-- form ends here -->
+            </div>
 
-                            <input class="textbox1 textbox2" type="text" name="message" id="message">
-                        </div>
+            <!-- Skip link to navigate to the main content -->
+            <a href="#main-content" class="skip-link" role="link"><i class="fa-solid fa-arrow-up"></i></a>
 
-                        <!-- Submit button for the form -->
-                        <button class="buy-button" type="submit">Send</button>
-
-                    </form>
-                    <!-- form ends here -->
-                </div>
-
-
-        
-
-
-
-
-        <a href="#main-content" class="skip-link"><i class="fa-solid fa-arrow-up"></i></a>
-
-        <!-- footer with socal links -->
-        <footer>
-            <p class="p-text">&copy; Pebble Pops All rights Reserved</p>
-            <ul>
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </footer>
-    </div>
-
-    <script src="https://kit.fontawesome.com/85ea36ec96.js" crossorigin="anonymous"></script>
-
-
-
-
-
+            <!-- footer Section with socal links -->
+            <footer>
+                <p class="p-text">&copy; Pebble Pops All rights Reserved</p>
+                <ul>
+                    <li><a href="https://www.facebook.com/" role="link"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/home" role="link"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/" role="link"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </footer>
+        </div>
+        <!-- alows icons to be added to the page -->
+        <script src="https://kit.fontawesome.com/85ea36ec96.js" crossorigin="anonymous"></script>
 
 </body>
 

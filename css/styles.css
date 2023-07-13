@@ -929,6 +929,30 @@ transition-timing-function: ease-out;
 }
 
 
+table,
+td,
+th {
+    border: 1px solid black;
+
+}
+
+table {
+    width: 100%;
+}
+
+.tabletop {
+    background-color: #ffe6ac;
+}
+
+.openhours th,
+td {
+    padding: 1rem;
+}
+
+
+
+
+
 /* skip link */
 .skip-link {
 transition-property: all;
