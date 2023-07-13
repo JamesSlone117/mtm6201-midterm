@@ -92,6 +92,14 @@ li {
     border-radius: 10px;
   }
 
+  nav img {
+    max-width: 200%;
+    height: 13rem;
+  }
+
+
+
+  /* displays h1 on top of the image */
   .homeBanner h1 {
     text-align: center;
     background-color: #26a9e1;
@@ -110,8 +118,28 @@ li {
   }
 
 
+  /* creates animation making the banner slide down 20px */
+  .homeBanner {
+    animation-name: logoslide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
 
-/* displays about page to be centered with image on top and p and h2 text below */
+  @keyframes logoslide {
+
+
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /* About page */
+  /* displays about page to be centered with image on top and p and h2 text below */
 
   .aboutImg {
     max-width: 100%;
@@ -127,25 +155,28 @@ li {
     border-radius: 10px;
   }
 
-  /* contact page */
+
+  /* About page */
+  /* centers contact items increases fonts sizes
+  with displaying content with "margin: 0 auto" */
 
   .form-box {
     max-width: 400px;
     margin: 0 auto;
-    background-color:#26a9e1;
+    background-color: #26a9e1;
     padding: 2rem;
     padding-left: 6rem;
     padding-right: 6rem;
     border-radius: 10px;
-    
   }
-  
+
   .p-text {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
   }
-  
+
+  /* alows textboxes to be resizeable */
   .textbox1 {
     width: 100%;
     padding: 0.5rem;
@@ -153,7 +184,7 @@ li {
     text-align: center;
     font-size: 25px;
   }
-  
+
   .textbox2 {
     height: 100px;
     font-size: 25px;
@@ -161,7 +192,7 @@ li {
 
   /* products page */
   /* top product images desplayed in a sepreite columns with text centered*/
- 
+
   .product-images img {
     max-width: 100%;
     height: auto;
@@ -169,15 +200,12 @@ li {
   }
 
   .product-items {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
     border-radius: 50px;
     padding: 2rem;
     text-align: center;
   }
 
-   /* makes images circles, styling buttons + a hover  */
+  /* makes images circles, styling buttons + a hover  */
   .product-items img {
     border-radius: 360px;
     max-width: 100%;
@@ -203,19 +231,17 @@ li {
     border-style: none;
     color: #FFFFFF;
     cursor: pointer;
-    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 2rem;
     font-weight: bold;
     line-height: 20px;
-    position: relative;
     text-align: center;
-    text-decoration: none;
     transition-property: all;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
     padding: 3rem;
   }
 
+  /* when hovering over button turns blue and gets bigger */
   .buy-button:hover,
   .buy-button:focus {
     background-color: #26a9e1;
@@ -226,7 +252,8 @@ li {
   }
 
 
-/* hours */
+  /* hours */
+  /* displays content in a table */
   .openhours {
     display: flex;
     flex-direction: column;
@@ -234,48 +261,54 @@ li {
     justify-content: center;
     background-color: #26a9e1;
     padding: 2rem;
-}
+  }
 
-
-/* skip link */
-.skip-link {
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-  color: white;
-  font-size: 6rem;
-  vertical-align:middle;
-  text-decoration: none;
-  padding: 1.5rem;
-}
-
-.skip-link i {
-  position: absolute;
-  transition: transform 0.5s;
-  text-align: end;
-  padding: 2rem;
-}
-
-.skip-link i:hover {
-  transform: translateY(-15px);
-  transition-timing-function: ease-out;
-}
-
-.skip-link:hover,
-.skip-link:focus {
-  color:#26a9e1;
-  transition-property: all;
-  transition-duration: 0.3s;
-  transition-timing-function: ease-out;
-}
+  /* adds a boarder */
+  th,
+  td {
+    border: solid white;
+  }
 
 
 
+  /* skip link - increases size of arrow */
+  .skip-link {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    color: white;
+    font-size: 6rem;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 1.5rem;
+  }
 
 
 
-  
+  .skip-link i {
+    position: absolute;
+    transition: transform 0.5s;
+    text-align: end;
+    padding: 2rem;
+  }
 
+  /* adds animation on hover*/
+  .skip-link i:hover {
+    transform: translateY(-15px);
+    transition-timing-function: ease-out;
+  }
+
+
+  /* adds color on hover*/
+  .skip-link:hover,
+  .skip-link:focus {
+    color: #26a9e1;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
+
+  /* footer centers content, adds color on hover over icons*/
   footer {
     text-align: center;
     background-color: #26a9e1;
@@ -294,6 +327,7 @@ li {
   footer a {
     padding-top: 2.3rem;
     padding: 1.5rem;
+    font-size: 2rem;
   }
 
   footer a:hover {
@@ -301,6 +335,7 @@ li {
     transform: scale(1.1);
   }
 }
+
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -356,11 +391,7 @@ li {
   }
 
 
-
-
-
-
-  /* nav */
+  /* this section will display the nav in a column from top to bottom has panning for spacing */
   nav a:hover {
     color: #f8d34f;
     transform: scale(1.1);
@@ -384,11 +415,20 @@ li {
     border-radius: 10px;
   }
 
+  nav img {
+    max-width: 200%;
+    height: 12rem;
+  }
+
+
+
+  /* lowers opacity */
   .image-container img {
     object-fit: cover;
     opacity: 70%;
   }
 
+  /* fixes header in place */
   .hero {
     position: relative;
     width: auto;
@@ -405,8 +445,10 @@ li {
     border-radius: 10px;
     padding-left: 9rem;
     padding-right: 9rem;
-
   }
+
+
+  /* checkpoint */
 
   .image-container {
     position: relative;
@@ -418,6 +460,25 @@ li {
     border-radius: 10px;
   }
 
+  /* creates animation making the banner slide down 20px */
+  .homeBanner {
+    animation-name: logoslide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes logoslide {
+
+
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+    }
+  }
 
   /* puts about text to the right of the image */
   .about-container {
@@ -440,40 +501,40 @@ li {
     border-radius: 10px;
   }
 
-/* contact page */
-
-.form-box {
-  max-width: 45rem;
-  margin: 0 auto;
-  background-color:#26a9e1;
-  padding: 2rem;
-  padding-left: 12rem;
-  padding-right: 12rem;
-  border-radius: 10px;
-  
-}
-
-.p-text {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
-
-.textbox1 {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 25px;
-}
-
-.textbox2 {
-  height: 100px;
-  font-size: 25px;
-}
+  /* contact page */
+  /* centers contact items increases fonts sizes with displaying content with "margin: 0 auto" */
 
 
+  .form-box {
+    max-width: 45rem;
+    margin: 0 auto;
+    background-color: #26a9e1;
+    padding: 2rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    border-radius: 10px;
 
+  }
+
+  .p-text {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  /* alows textboxes to be resizeable */
+  .textbox1 {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .textbox2 {
+    height: 100px;
+    font-size: 25px;
+  }
 
   /* top product images desplayed in a column  */
   .product-images img {
@@ -500,13 +561,15 @@ li {
 
   }
 
+
+  /* images displayed as rounded  */
   .product-items img {
     border-radius: 360px;
     max-width: 70%;
     height: auto;
   }
 
-
+  /* hides the third image */
   .hide-tablet {
     display: none;
     visibility: hidden;
@@ -517,7 +580,7 @@ li {
     margin: 1.5rem;
   }
 
-  /* button */
+  /* button styling with animation  */
   .buy-button {
     background-color: #EA4C89;
     border-radius: 8px;
@@ -538,6 +601,7 @@ li {
 
   }
 
+  /* changes color when hover and increases size */
   .buy-button:hover,
   .buy-button:focus {
     background-color: #26a9e1;
@@ -549,56 +613,50 @@ li {
 
 
 
-/* hours */
-.openhours {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  background-color: #26a9e1;
-  padding: 2rem;
-}
+  /* hours  displayed in a table*/
+  .openhours {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #26a9e1;
+    padding: 2rem;
+  }
 
 
-/* skip link */
-.skip-link {
-transition-property: all;
-transition-duration: 0.3s;
-transition-timing-function: ease-out;
-color: white;
-font-size: 6rem;
-vertical-align:middle;
-text-decoration: none;
-padding: 1.5rem;
-}
+  /* skip link alows to go back to the top*/
+  .skip-link {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    color: white;
+    font-size: 6rem;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 1.5rem;
+  }
 
-.skip-link i {
-transition: transform 0.5s;
-text-align: end;
-padding: 2rem;
-}
+  .skip-link i {
+    transition: transform 0.5s;
+    text-align: end;
+    padding: 2rem;
+  }
 
-.skip-link i:hover {
-transform: translateY(-15px);
-transition-timing-function: ease-out;
-}
+  /* adds animation to skip link */
+  .skip-link i:hover {
+    transform: translateY(-15px);
+    transition-timing-function: ease-out;
+  }
 
-.skip-link:hover,
-.skip-link:focus {
-color:#26a9e1;
-transition-property: all;
-transition-duration: 0.3s;
-transition-timing-function: ease-out;
-}
+  .skip-link:hover,
+  .skip-link:focus {
+    color: #26a9e1;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
 
-
-
-
-
-
-
-  
-  /* footer */
+  /* footer  displays content in the center*/
 
   footer {
     text-align: center;
@@ -632,19 +690,6 @@ transition-timing-function: ease-out;
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Desktop Styles */
@@ -692,11 +737,7 @@ transition-timing-function: ease-out;
 
   nav {
     font-size: 1.8rem;
-
   }
-
-
-
 
   /* screen3 */
   /* Styles for desktops */
@@ -705,6 +746,7 @@ transition-timing-function: ease-out;
     padding-right: 10rem;
   }
 
+  /* displays content in a row to have site links across */
   nav {
     text-align: center;
     margin-bottom: 1rem;
@@ -713,9 +755,7 @@ transition-timing-function: ease-out;
     border-radius: 10px;
   }
 
-
-
-
+  /* gives hover colour and size change */
   nav a:hover {
     color: #f8d34f;
     transform: scale(1.1);
@@ -741,18 +781,15 @@ transition-timing-function: ease-out;
     max-height: fit-content;
     width: 150rem;
     justify-content: center;
-    
+
   }
+
   nav li {
     font-size: 3rem;
     margin: auto 54px;
   }
 
-  
-
-
-
-/* marker */
+  /* fixes the header in place */
   .hero {
     position: relative;
     width: auto;
@@ -766,6 +803,7 @@ transition-timing-function: ease-out;
     height: 50rem;
   }
 
+  /* h1 on top of image */
   .homeBanner h1 {
     text-align: center;
     position: absolute;
@@ -777,6 +815,7 @@ transition-timing-function: ease-out;
     border-radius: 10px;
   }
 
+  /* changes opacity and centers content  */
   .image-container {
     position: relative;
     display: flex;
@@ -800,60 +839,47 @@ transition-timing-function: ease-out;
     padding: 5rem;
   }
 
-
   .aboutImg {
     width: 25rem;
-    /* Adjust the width to your desired size */
     height: auto;
-    /* Maintain aspect ratio */
-
     object-fit: cover;
     margin-right: 20px;
     margin: 2rem;
-
   }
-
-  .about-container h2,
-  .about-container p {
-    text-align: left;
-  }
-
-
 
   /* contact page */
 
-.form-box {
+  .form-box {
 
-  margin: 0 auto;
-  background-color:#26a9e1;
-  padding: 2rem;
-  padding-left: 12rem;
-  padding-right: 12rem;
-  border-radius: 10px;
-  
-}
+    margin: 0 auto;
+    background-color: #26a9e1;
+    padding: 2rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    border-radius: 10px;
 
-.p-text {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: bold;
-}
+  }
 
-.textbox1 {
-  width: 100%;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-size: 25px;
-}
+  /* text styling */
+  .p-text {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
 
-.textbox2 {
-  height: 100px;
-  font-size: 25px;
-}
+  /* textbox width */
+  .textbox1 {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    font-size: 25px;
+  }
 
-
-
+  .textbox2 {
+    height: 100px;
+    font-size: 25px;
+  }
 
   /* top product images desplayed in a column  */
   .product-images img {
@@ -888,7 +914,7 @@ transition-timing-function: ease-out;
     margin: 1.5rem;
   }
 
-  /* button */
+  /* button styling */
   .buy-button {
     background-color: #EA4C89;
     border-radius: 8px;
@@ -909,6 +935,8 @@ transition-timing-function: ease-out;
 
   }
 
+
+  /* adds different colour and increases size */
   .buy-button:hover,
   .buy-button:focus {
     background-color: #26a9e1;
@@ -918,77 +946,78 @@ transition-timing-function: ease-out;
     transform: scale(1.1);
   }
 
-  /* hours */
-.openhours {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  background-color: #26a9e1;
-  padding: 2rem;
-}
+  /* hours displayed in table*/
+  .openhours {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: #26a9e1;
+    padding: 2rem;
+  }
 
-
-table,
-td,
-th {
+  /* adds solid black border */
+  table,
+  td,
+  th {
     border: 1px solid black;
 
-}
+  }
 
-table {
+  table {
     width: 100%;
-}
+  }
 
-.tabletop {
+  .tabletop {
     background-color: #ffe6ac;
-}
+  }
 
-.openhours th,
-td {
+  .openhours th,
+  td {
     padding: 1rem;
-}
+  }
 
 
 
 
 
-/* skip link */
-.skip-link {
-transition-property: all;
-transition-duration: 0.3s;
-transition-timing-function: ease-out;
-color: white;
-font-size: 6rem;
-vertical-align:middle;
-text-decoration: none;
-padding: 1.5rem;
-}
+  /* increases size of skip link  to go back to the top of the page*/
+  .skip-link {
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    color: white;
+    font-size: 6rem;
+    vertical-align: middle;
+    text-decoration: none;
+    padding: 1.5rem;
+  }
 
-.skip-link i {
-transition: transform 0.5s;
-text-align: end;
-padding: 2rem;
-}
+  .skip-link i {
+    transition: transform 0.5s;
+    text-align: end;
+    padding: 2rem;
+  }
 
-.skip-link i:hover {
-transform: translateY(-15px);
-transition-timing-function: ease-out;
-}
+  /* goes up on hover */
+  .skip-link i:hover {
+    transform: translateY(-15px);
+    transition-timing-function: ease-out;
+  }
 
-.skip-link:hover,
-.skip-link:focus {
-color:#26a9e1;
-transition-property: all;
-transition-duration: 0.3s;
-transition-timing-function: ease-out;
-}
-
-  
-
+  .skip-link:hover,
+  .skip-link:focus {
+    color: #26a9e1;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+  }
 
 
-  /* footer */
+
+
+
+  /* footer  centers content on page*/
 
 
   footer {
@@ -1029,18 +1058,3 @@ transition-timing-function: ease-out;
   }
 
 }
-
-
-
-  
-
-
-
-
-
-  
-
-
-  
-
-  

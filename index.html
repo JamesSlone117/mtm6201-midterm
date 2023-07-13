@@ -14,7 +14,9 @@
             <!-- nav starts -->
             <nav id="main-content" role="navigation">
 
-                <a href="index.html"><img src="images/pebble_pops_logo.png" alt="pebble pops company logo"></a>
+                <a href="index.html"><img srcset="
+                    images/pebble_pops_logo.png 1500w,
+                    images\resized\pebble_pops_logo.png 200w" alt="pebble pops company logo"></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
@@ -28,7 +30,10 @@
             <div class="hero">
                 <h1 class="head-color" role="heading">Cake Pops</h1>
                 <div class="image-container">
-                    <img src="images/natalie-chaney-unsplash.jpg" alt="image of cake pops">
+                    <img srcset="
+                    images/natalie-chaney-unsplash.jpg 500w,
+                    images\resized\natalie-chaney-unsplash.jpg 200w
+                    " alt="image of multiple cake pops on a table">
                 </div>
                 <p class="p-text">From classic flavors that evoke nostalgia to bold and innovative creations that push
                     the boundaries
@@ -40,20 +45,20 @@
         </section>
 
         <!-- table of days store is open, table top class is put in place to colour the top section of table-->
-        <section class="openhours">
+        <section class="openhours" itemscope itemtype="https://schema.org/OpeningHoursSpecification">
             <h2 class="head-color">Hours of Operation</h2>
             <table>
-                <tr class="p-text">
-                    <th class="p-text">Days</th>
-                    <th class="p-text">Hours</th>
+                <tr>
+                    <th itemprop="dayOfWeek">Days</th>
+                    <th itemprop="hoursAvailable">Hours</th>
                 </tr>
                 <tr>
-                    <td class="p-text">Monday - Friday</td>
-                    <td class="p-text">9 AM - 6 PM</td>
+                    <td itemprop="dayOfWeek">Monday - Friday</td>
+                    <td itemprop="hoursAvailable">9 AM - 6 PM</td>
                 </tr>
                 <tr>
-                    <td class="p-text">Saturday - Sunday</td>
-                    <td class="p-text">Closed</td>
+                    <td itemprop="dayOfWeek">Saturday - Sunday</td>
+                    <td itemprop="closes">Closed</td>
                 </tr>
             </table>
         </section>
@@ -63,7 +68,7 @@
         <a href="#main-content" class="skip-link" role="link"><i class="fa-solid fa-arrow-up"></i></a>
 
         <!-- footer with socal links -->
-        <footer>
+        <footer role="contentinfo">
             <p class="p-text">&copy; Pebble Pops All rights Reserved</p>
             <ul>
                 <li><a href="https://www.facebook.com/" role="link"><i class="fa-brands fa-facebook"></i></a></li>

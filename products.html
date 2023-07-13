@@ -14,7 +14,9 @@
         <header>
             <!-- nav starts -->
             <nav id="main-content" role="navigation">
-                <a href="index.html"><img src="images/pebble_pops_logo.png" alt="pebble pops company logo"></a>
+                <a href="index.html"><img srcset="
+                    images/pebble_pops_logo.png 1500w,
+                    images\resized\pebble_pops_logo.png 200w" alt="pebble pops company logo"></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="products.html">Products</a></li>
@@ -29,39 +31,62 @@
             <!-- 3 Top Images displayed across -->
 
             <div class="product-images">
-                <img  src="images/person1.png" alt="picuture of little girl holding lolipop inside">
-                <img src="images/person2.png" class="hide" alt="picuture of women holding ice cream cone outside">
-                <img src="images/person3.png" class="hide hide-tablet" alt="picuture of man with confetti around him">
+                <img srcset="
+                images/person1.png 500w,
+                images\resized\person1.png 200w" alt="picuture of little girl holding lolipop inside a room">
+                <img srcset="
+                images/person2.png 500w,
+                images\resized\person2.png 200w" class="hide" alt="picuture of women holding ice cream cone outside">
+                <img srcset="
+                images/person3.png 500w,
+                images\resized\person3.png 200w" class="hide hide-tablet"
+                    alt="picuture of man with confetti around him">
             </div>
 
             <h2 class="head-color" role="heading" aria-level="2">Products</h2>
 
             <!-- Product Items -->
             <!-- 4 different food products with title, price, img and btn  -->
-            <div class="product-items" role="list">
+            <div class="product-items" role="list" itemscope itemtype="https://schema.org/Product">
                 <div class="product-item" role="listitem">
-                    <img class="product-image" src="images/product1.png" alt="Product 1 - picuture of a purple and blue donut on a yellow background">
-                    <h3 role="heading" class="head-color product-title" role="heading" aria-level="3">Donuts</h3>
-                    <p class="product-price p-text">$10</p>
+                    <img class="product-image" srcset="
+                    images/product1.png 500w,
+                    images\resized\product1.png 250w" itemprop="image"
+                        alt="Product 1 - picuture of a purple and blue donut on a yellow background">
+                    <h3 role="heading" class="head-color product-title" itemprop="name" role="heading" aria-level="3">
+                        Donuts</h3>
+                    <p class="product-price p-text" itemprop="offers">$10</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
 
                 <div class="product-item" role="listitem">
-                    <img class="product-image" src="images/product2.png" alt="Product 2 - picuture of a white cupcake on a pink background">
-                    <h3 role="heading" class="head-color product-title" role="heading" aria-level="3">Cupcake</h3>
-                    <p class="product-price p-text">$15</p>
+                    <img class="product-image" srcset="
+                    images/product2.png 500w,
+                    images\resized\product2.png 200w" itemprop="image"
+                        alt="Product 2 - picuture of a white cupcake on a pink background">
+                    <h3 role="heading" class="head-color product-title" itemprop="name" role="heading" aria-level="3">
+                        Cupcake</h3>
+                    <p class="product-price p-text" itemprop="offers">$15</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
                 <div class="product-item" role="listitem">
-                    <img class="product-image" src="images/product3.png" alt="Product 3 - picuture white strawberry cupcake on a table">
-                    <h3 role="heading" class="head-color product-title" role="heading" aria-level="3">Cupcake</h3>
-                    <p class="product-price p-text">$20</p>
+                    <img class="product-image" srcset="
+                    images/product3.png 500w,
+                    images\resized\product3.png 250w" itemprop="image"
+                        alt="Product 3 - picuture white strawberry cupcake on a table">
+                    <h3 role="heading" class="head-color product-title" itemprop="name" role="heading" aria-level="3">
+                        Cupcake</h3>
+                    <p class="product-price p-text" itemprop="offers">$20</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
                 <div class="product-item" role="listitem">
-                    <img class="product-image" src="images/product4.png" alt="Product 4 - picuture of multiple chocolate ricebar on a white table">
-                    <h3 role="heading" class="head-color product-title" role="heading" aria-level="3">Rice Bar</h3>
-                    <p class="product-price p-text">$20</p>
+                    <img class="product-image" srcset="
+                    images/product4.png 500w,
+                    images\resized\product4.png 200w" itemprop="image"
+                        alt="Product 4 - picuture of multiple chocolate ricebar on a white table">
+                    <h3 role="heading" class="head-color product-title" itemprop="name" role="heading" aria-level="3">
+                        Rice Bar</h3>
+                    <p class="product-price p-text" itemprop="offers">$20</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
             </div>
@@ -73,7 +98,7 @@
     <a href="#main-content" class="skip-link" role="link"><i class="fa-solid fa-arrow-up"></i></a>
 
     <!-- footer with socal links with icons -->
-    <footer>
+    <footer role="contentinfo">
         <p class="p-text">&copy; Pebble Pops All rights Reserved</p>
         <ul>
             <li><a href="https://www.facebook.com/" role="link"><i class="fa-brands fa-facebook"></i></a></li>
