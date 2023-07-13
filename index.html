@@ -9,10 +9,10 @@
 </head>
 
 <body>
-    <div class="wrapper" id="main-content">
+    <div class="wrapper" >
         <header>
             <!-- nav starts -->
-            <nav>
+            <nav id="main-content">
 
                 <a href="index.html"><img src="images/pebble_pops_logo.png" alt="pebble pops company logo"></a>
                 <ul>
@@ -29,11 +29,11 @@
         <!-- hero banner will have text overlap image -->
         <section class="homeBanner">
             <div class="hero">
-                <h1 class="head-color">Cake Pops</h1>
+                <h1 class="head-color" role="heading">Cake Pops</h1>
                 <div class="image-container">
                     <img src="images/natalie-chaney-unsplash.jpg" alt="image of cake pops">
                 </div>
-                <p>From classic flavors that evoke nostalgia to bold and innovative creations that push the boundaries
+                <p class="p-text">From classic flavors that evoke nostalgia to bold and innovative creations that push the boundaries
                     of
                     taste, our collection offers something for everyone. Whether you're celebrating a special occasion,
                     treating yourself, or surprising a loved one, our cake pops are the perfect choice.</p>
@@ -43,21 +43,47 @@
 
 
 
-        <a href="#main-content" class="skip-link"><i class="fa-solid fa-arrow-up"></i></a></li>
+
+
+        <!-- table of days store is open, table top class is put in place to colour the top section of table-->
+        <section class="openhours">
+            <h2 class="head-color">Hours of Operation</h2>
+            <table>
+                <tr class="p-text">
+                    <th class="p-text">Days</th>
+                    <th class="p-text">Hours</th>
+                </tr>
+                <tr>
+                    <td class="p-text">Monday - Friday</td>
+                    <td class="p-text">9 AM - 6 PM</td>
+                </tr>
+                <tr>
+                    <td class="p-text">Saturday - Sunday</td>
+                    <td class="p-text">Closed</td>
+                </tr>
+            </table>
+        </section>
 
 
 
-        <!-- footer with socal links -->
-        <footer>
-            <p>&copy; Pebble Pops All rights Reserved</p>
-            <ul>
-                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-        </footer>
+        <a href="#main-content" class="skip-link"><i class="fa-solid fa-arrow-up"></i></a>
 
+    <!-- footer with socal links -->
+    <footer>
+        <p class="p-text">&copy; Pebble Pops All rights Reserved</p>
+        <ul>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </footer>
     </div>
+
+
+
+    
+
+    
 
     <script src="https://kit.fontawesome.com/85ea36ec96.js" crossorigin="anonymous"></script>
 

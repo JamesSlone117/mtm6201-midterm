@@ -13,7 +13,7 @@
     <div class="wrapper">
         <header>
             <!-- nav starts -->
-            <nav>
+            <nav id="main-content">
                 <a href="index.html"><img src="images/pebble_pops_logo.png" alt="pebble pops company logo"></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,17 +29,57 @@
             </div>
 
             <div class="about-text">
-                <h2 class="head-color">About Us!</h2>
-                <p>Pebble Pops! is a cake pop company that specializes in selling flavors that appeal to your mood or
+                <h2 class="head-color" role="heading">About Us!</h2>
+                <p class="p-text">Pebble Pops! is a cake pop company that specializes in selling flavors that appeal to your mood or
                     situation. Their slogan is “get a taste of joy, one scoop at a time”, so whether you're in a happy
                     or sad state their goal is to bring up your mood and brighten your day.</p>
             </div>
 
         </section>
 
+
+       
+
+            <div class="contact-contaner">
+                <h2 class="head-color">Contact Us</h2>
+                <div class="form-box contact-box">
+                    <!-- form starts here -->
+                    <form action="index.html">
+                        <div id="textboxs">
+                            <!-- Input field for fullname -->
+                            <label class="p-text" for="fullname">Fullname</label>
+
+                            <input class="textbox1" type="text" id="fullname" name="fullname" required>
+
+                            <!-- Input field for email -->
+                            <label class="p-text" for="email">Email</label>
+
+                            <input class="textbox1" type="email" id="email" name="email" required>
+
+                            <!-- Input field for message -->
+                            <label class="p-text" for="message">Your Message</label>
+
+                            <input class="textbox1 textbox2" type="text" name="message" id="message">
+                        </div>
+
+                        <!-- Submit button for the form -->
+                        <button class="buy-button" type="submit">Send</button>
+
+                    </form>
+                    <!-- form ends here -->
+                </div>
+
+
+        
+
+
+
+
+        <a href="#main-content" class="skip-link"><i class="fa-solid fa-arrow-up"></i></a>
+
         <!-- footer with socal links -->
         <footer>
-            <p>&copy; Pebble Pops All rights Reserved</p>
+            <p class="p-text">&copy; Pebble Pops All rights Reserved</p>
             <ul>
                 <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
                 <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>

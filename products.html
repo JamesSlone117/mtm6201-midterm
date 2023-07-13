@@ -13,7 +13,7 @@
     <div class="wrapper">
         <header>
             <!-- nav starts -->
-            <nav>
+            <nav id="main-content">
                 <a href="index.html"><img src="images/pebble_pops_logo.png" alt="pebble pops company logo"></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -29,40 +29,39 @@
             <!-- 3 images on top displayed across -->
 
             <div class="product-images">
-                <img src="images/person1.png" alt="Product 1">
+                <img  src="images/person1.png" alt="Product 1">
                 <img src="images/person2.png" class="hide" alt="Product 2">
                 <img src="images/person3.png" class="hide hide-tablet" alt="Product 3">
             </div>
 
-            <h2 class="head-color">Products</h2>
-
+            <h2 class="head-color" role="heading">Products</h2>
 
             <!-- 4 different food products with title, price, img and btn  -->
 
             <div class="product-items">
                 <div class="product-item">
                     <img class="product-image" src="images/product1.png" alt="Product 1">
-                    <h3 class="head-color product-title">Donuts</h3>
-                    <p class="product-price">$10</p>
+                    <h3 role="heading" class="head-color product-title">Donuts</h3>
+                    <p class="product-price p-text">$10</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
 
                 <div class="product-item">
                     <img class="product-image" src="images/product2.png" alt="Product 2">
-                    <h3 class="head-color product-title">Cupcake</h3>
-                    <p class="product-price">$15</p>
+                    <h3 role="heading" class="head-color product-title">Cupcake</h3>
+                    <p class="product-price p-text">$15</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
                 <div class="product-item">
                     <img class="product-image" src="images/product3.png" alt="Product 3">
-                    <h3 class="head-color product-title">Cupcake</h3>
-                    <p class="product-price">$20</p>
+                    <h3 role="heading" class="head-color product-title">Cupcake</h3>
+                    <p class="product-price p-text">$20</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
                 <div class="product-item">
                     <img class="product-image" src="images/product4.png" alt="Product 4">
-                    <h3 class="head-color product-title">Rice Bar</h3>
-                    <p class="product-price">$20</p>
+                    <h3 role="heading" class="head-color product-title">Rice Bar</h3>
+                    <p class="product-price p-text">$20</p>
                     <button class="buy-button">Buy Now</button>
                 </div>
             </div>
@@ -70,14 +69,11 @@
 
     </div>
 
+    <a href="#main-content" class="skip-link"><i class="fa-solid fa-arrow-up"></i></a>
 
-
-
-
-
-    <!-- footer with socal links -->
+    <!-- footer with socal links with icons -->
     <footer>
-        <p>&copy; Pebble Pops All rights Reserved</p>
+        <p class="p-text">&copy; Pebble Pops All rights Reserved</p>
         <ul>
             <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
