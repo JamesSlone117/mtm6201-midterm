@@ -91,7 +91,6 @@ li {
     background-color: #26a9e1;
     border-radius: 10px;
   }
-
   nav img {
     max-width: 200%;
     height: 13rem;
@@ -263,13 +262,12 @@ li {
     padding: 2rem;
   }
 
-  /* adds a boarder */
-  th,
-  td {
+/* adds a boarder */
+  th, td {
     border: solid white;
   }
 
-
+  
 
   /* skip link - increases size of arrow */
   .skip-link {
@@ -284,14 +282,13 @@ li {
   }
 
 
-
+  
   .skip-link i {
     position: absolute;
     transition: transform 0.5s;
     text-align: end;
     padding: 2rem;
   }
-
   /* adds animation on hover*/
   .skip-link i:hover {
     transform: translateY(-15px);
@@ -308,7 +305,7 @@ li {
     transition-timing-function: ease-out;
   }
 
-  /* footer centers content, adds color on hover over icons*/
+/* footer centers content, adds color on hover over icons*/
   footer {
     text-align: center;
     background-color: #26a9e1;
@@ -427,8 +424,7 @@ li {
     object-fit: cover;
     opacity: 70%;
   }
-
-  /* fixes header in place */
+/* fixes header in place */
   .hero {
     position: relative;
     width: auto;
@@ -448,7 +444,7 @@ li {
   }
 
 
-  /* checkpoint */
+/* checkpoint */
 
   .image-container {
     position: relative;
@@ -460,25 +456,25 @@ li {
     border-radius: 10px;
   }
 
-  /* creates animation making the banner slide down 20px */
-  .homeBanner {
-    animation-name: logoslide;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
+/* creates animation making the banner slide down 20px */
+.homeBanner {
+  animation-name: logoslide;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes logoslide {
+
+
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
   }
 
-  @keyframes logoslide {
-
-
-    0% {
-      transform: translateY(-30px);
-      opacity: 0;
-    }
-
-    100% {
-      transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
   }
+}
 
   /* puts about text to the right of the image */
   .about-container {
@@ -502,8 +498,8 @@ li {
   }
 
   /* contact page */
-  /* centers contact items increases fonts sizes with displaying content with "margin: 0 auto" */
-
+/* centers contact items increases fonts sizes with displaying content with "margin: 0 auto" */
+  
 
   .form-box {
     max-width: 45rem;
@@ -521,7 +517,6 @@ li {
     margin-bottom: 0.5rem;
     font-weight: bold;
   }
-
   /* alows textboxes to be resizeable */
   .textbox1 {
     width: 100%;
@@ -568,7 +563,6 @@ li {
     max-width: 70%;
     height: auto;
   }
-
   /* hides the third image */
   .hide-tablet {
     display: none;
@@ -600,7 +594,6 @@ li {
     transition-timing-function: ease-out;
 
   }
-
   /* changes color when hover and increases size */
   .buy-button:hover,
   .buy-button:focus {
@@ -641,7 +634,6 @@ li {
     text-align: end;
     padding: 2rem;
   }
-
   /* adds animation to skip link */
   .skip-link i:hover {
     transform: translateY(-15px);
@@ -795,6 +787,8 @@ li {
     width: auto;
   }
 
+  
+
   .image-container img {
     object-fit: cover;
     opacity: 70%;
@@ -802,7 +796,6 @@ li {
     max-width: 100%;
     height: 50rem;
   }
-
   /* h1 on top of image */
   .homeBanner h1 {
     text-align: center;
@@ -814,7 +807,6 @@ li {
     background-color: #26a9e1;
     border-radius: 10px;
   }
-
   /* changes opacity and centers content  */
   .image-container {
     position: relative;
@@ -823,6 +815,26 @@ li {
     justify-items: center;
     border-radius: 10px;
     opacity: 70%;
+  }
+
+  /* creates animation making the banner slide down 20px */
+  .homeBanner {
+    animation-name: logoslide;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes logoslide {
+
+
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+
+    100% {
+      transform: translateY(0);
+    }
   }
 
   /* puts about text to the right of the image */
@@ -859,14 +871,12 @@ li {
     border-radius: 10px;
 
   }
-
   /* text styling */
   .p-text {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
   }
-
   /* textbox width */
   .textbox1 {
     width: 100%;
@@ -956,7 +966,7 @@ li {
     padding: 2rem;
   }
 
-  /* adds solid black border */
+/* adds solid black border */
   table,
   td,
   th {
@@ -998,7 +1008,6 @@ li {
     text-align: end;
     padding: 2rem;
   }
-
   /* goes up on hover */
   .skip-link i:hover {
     transform: translateY(-15px);
